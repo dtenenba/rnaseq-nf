@@ -26,10 +26,10 @@
  * given `params.foo` specify on the run command line `--foo some_value`.
  */
 
-params.reads = "s3://dtenenba-temp-test/data/ggal/ggal_gut_{1,2}.fq"
-params.transcriptome = "s3://dtenenba-temp-test/data/ggal/ggal_1_48850000_49020000.Ggal71.500bpflank.fa"
-params.outdir = "s3://dtenenba-temp-test/results"
-params.multiqc = "s3://dtenenba-temp-test/multiqc"
+params.reads = "s3://dtenenba-temp-encrypted-bucket/data/ggal/ggal_gut_{1,2}.fq"
+params.transcriptome = "s3://dtenenba-temp-encrypted-bucket/data/ggal/ggal_1_48850000_49020000.Ggal71.500bpflank.fa"
+params.outdir = "s3://dtenenba-temp-encrypted-bucket/results"
+params.multiqc = "s3://dtenenba-temp-encrypted-bucket/multiqc"
 
 log.info """\
  R N A S E Q - N F   P I P E L I N E
